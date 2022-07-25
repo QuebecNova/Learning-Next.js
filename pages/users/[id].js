@@ -1,5 +1,4 @@
 import { useRouter } from "next/router"
-import NavBar from "../../components/NavBar"
 import styles from '../../styles/user.module.scss'
 import MainContainer from './../../components/MainContainer';
 

@@ -1,6 +1,4 @@
 import Link from "next/link"
-import { useState } from "react"
-import NavBar from "../components/NavBar"
 import MainContainer from './../components/MainContainer';
 
 export default function Users({users}) {
@@ -23,7 +21,7 @@ export default function Users({users}) {
   )
 }
 
-export async function getStaticProps(context) {
+export async function getStaticProps() {
     const response = await fetch('https://jsonplaceholder.typicode.com/users')
     const users = await response.json()
 
